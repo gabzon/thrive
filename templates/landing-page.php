@@ -27,11 +27,11 @@
 </div>
 
 <div class="ui container aligned center">
-    <div class="ui multitabs pointing fluid three item pink secondary menu">
+    <!-- <div class="ui multitabs pointing fluid three item pink secondary menu">
       <a class="item active" data-tab="first"><?php _e('TOOLS','sage'); ?></a>
-      <a class="item" data-tab="second"><?php _e('GUIDES','sage'); ?></a>
+      a class="item" data-tab="second"><?php _e('GUIDES','sage'); ?></a>
       <a class="item" data-tab="third"><?php _e('LEADERSHIP','sage'); ?></a>
-    </div>
+    </div> -->
     <div class="ui tab basic segment active" data-tab="first">
         <?php get_template_part('landing/toolbox'); ?>
     </div>
