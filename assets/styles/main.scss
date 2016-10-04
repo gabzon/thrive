@@ -1,18 +1,24 @@
 @import "common/variables";
 
 // Import npm dependencies
-@import "~bootstrap/scss/bootstrap";
+@import "~semantic-ui/dist/semantic";
 @import "~font-awesome/scss/font-awesome";
 
+@import "common/fonts";
 @import "common/global";
+@import "common/mixins";
+@import "common/variables";
+
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
 @import "components/wp-classes";
+
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/toolbox";
