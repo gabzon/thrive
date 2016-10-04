@@ -1,7 +1,5 @@
 <?php
-
 namespace Roots\Sage\Template;
-
 /**
  * Class Wrapper
  * @package Roots\Sage
@@ -11,13 +9,10 @@ class Wrapper implements WrapperInterface
 {
     /** @var string Wrapper slug */
     protected $slug;
-
     /** @var string Template file that is being wrapped */
     protected $template = '';
-
     /** @var string[] Array of template wrappers; e.g., `base-singular.php`, `base-page.php`, `base.php` */
     protected $wrapper = [];
-
     /**
      * Wrapper constructor
      *
@@ -32,7 +27,6 @@ class Wrapper implements WrapperInterface
         $str = substr($base, 0, -4);
         array_unshift($this->wrapper, sprintf($str . '-%s.php', basename($template, '.php')));
     }
-
     /**
      * @return string
      * @see getTemplate
@@ -41,20 +35,17 @@ class Wrapper implements WrapperInterface
     {
         return $this->unwrap();
     }
-
     /** {@inheritdoc} */
     public function wrap()
     {
         $wrappers = apply_filters('sage/wrap_' . $this->slug, $this->wrapper) ?: $this->wrapper;
         return locate_template($wrappers);
     }
-
     /** {@inheritdoc} */
     public function slug()
     {
         return $this->slug;
     }
-
     /** {@inheritdoc} */
     public function unwrap()
     {

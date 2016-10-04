@@ -1,7 +1,5 @@
 <?php
-
 namespace Roots\Sage\Assets;
-
 /**
  * Interface ManifestInterface
  * @package Roots\Sage
@@ -18,7 +16,6 @@ interface ManifestInterface
      * @return string
      */
     public function get($file);
-
     /**
      * Get the asset manifest
      *
